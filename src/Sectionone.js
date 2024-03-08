@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import './Sectionone.css'
+import './Sectionone.css';
+import ThreeHuskiesImage from './Threehuskies.jpg';
 
 
 
@@ -43,7 +44,7 @@ const Section1 = () => {
     }, []);
     return (
       <section id="section1">
-        <div className="background-image" style={{ backgroundImage: 'url(./threehuskies.jpg)' }}></div>
+        <div className="background-image" style={{ backgroundImage: `url(${ThreeHuskiesImage})` }}></div>
         <div className="content">
          <div><h2>{text}</h2></div>     
        

@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import './header.css'
+import './header.css';
+import MarLogo from './MAR_logo.png';
+
 const Header = () => {
     // Implement logic for changing background color on scroll
     window.addEventListener('scroll', () => {
@@ -14,7 +16,8 @@ const Header = () => {
   
     return (
       <header id="header">
-        <img src="./mar_logo.png" alt="Logo" height={80} width={120} />
+        
+        <img src={MarLogo} alt="Logo" height={80} width={120} />
         <div className='headerDirectory'>
           <div><h3><a href='#About'>About</a></h3></div>
           <div> <h3>Team</h3></div>

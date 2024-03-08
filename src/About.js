@@ -1,5 +1,7 @@
 import React from "react";
-import './About.css'
+import './About.css';
+import hss from './hss_logo.png';
+
 const About = () => {
   
     // const words = ["Latest Research Papers", "AI/ML models", "Top Github repositories","Top AL/ML Models on HuggingFace"];
@@ -10,8 +12,8 @@ const About = () => {
       <section id="About">
         <div className="info">
           <p id='updatetitle'>Stay updated with our Newsletter ^_^</p>
-          <img src="./hss_logo.png" alt="Logo" height={240} width={340} />
-       <div className='NewsletterContent'><ul>
+          <img src={hss} alt="Logo" height={240} width={340} />      
+        <div className='NewsletterContent'><ul>
         <li>Latest Research Papers</li>
         <li>Top Github repositories</li>
         <li>Top AL/ML Models on HuggingFace</li>
